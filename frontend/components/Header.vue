@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <header class=" p-4 border-b-2 border-b-[#111419] border-opacity-50">
+    <header class="p-4 border-b-2 border-b-[#111419] border-opacity-25">
         <div class="container mx-auto px-16 flex justify-between items-center">
             <h1 class="text-[#00ADB5] text-3xl font-bold">JuanaFinder</h1>
             <!-- <div class="flex space-x-4">
