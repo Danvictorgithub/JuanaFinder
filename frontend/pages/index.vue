@@ -22,7 +22,7 @@ const handleTalentButtonClick = () => {
     <div>
         <Header/>
         
-        <div v-if="!loginClient && !loginTalent" class="p-4">
+        <div v-if="!loginClient && !loginTalent" class="container mx-auto p-4">
             <div class="flex justify-center items-center gap-8">
                 <button class="text-2xl font-semibold rounded-3xl px-4 py-2 transition-colors duration-150 ease-in-out" :class="[{'bg-[#00ADB5] hover:bg-[#00ADB5] text-[#F1F1EF]': listTalent }, {'hover:bg-gray-100': !listTalent}]" @click="handleTalentButtonClick">
                     Find Talent
