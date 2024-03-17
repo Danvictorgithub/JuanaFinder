@@ -1,25 +1,34 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
-    <header class=" p-4 border-b-2 border-b-[#111419] border-opacity-50">
-        <div class="container mx-auto px-16 flex justify-between items-center">
-            <h1 class="text-[#00ADB5] text-2xl font-bold">JuanaFinder</h1>
-            <!-- <div class="flex space-x-4">
-                <button class="text-white bg-blue-500 px-4 py-2 rounded">Messages</button>
-                <button class="text-white bg-blue-500 px-4 py-2 rounded">Notifications</button>
-                <button class="text-white bg-blue-500 px-4 py-2 rounded">Contracts</button>
+  <header class="p-4 border-b-2 border-b-[#111419] border-opacity-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <NuxtLink to="/" class="flex gap-3 items-center">
+        <img src="/logo.svg" class="h-12 w-12" alt="" />
+        <h1 class="text-[#00ADB5] text-2xl font-bold">JuanaFinder</h1>
+      </NuxtLink>
+      <!-- <div class="flex space-x-4">
+                <NuxtLink class="text-white bg-blue-500 px-4 py-2 rounded">Messages</NuxtLink>
+                <NuxtLink class="text-white bg-blue-500 px-4 py-2 rounded">Notifications</NuxtLink>
+                <NuxtLink class="text-white bg-blue-500 px-4 py-2 rounded">Contracts</NuxtLink>
             </div> -->
-            <div class="flex justify-between items-center gap-8">
-                <button class="text-lg font-semibold text-[#2F414F]">Become a Talent</button>
-                <button class="text-lg font-semibold text-[#2F414F]">Sign In</button>
-                <button class="border-2 border-[#00ADB5] py-0.5 px-3.5 rounded-md text-[#00ADB5] font-semibold text-lg">Join</button>
-            </div>
-        </div>
-    </header>
+      <nav class="flex justify-between items-center gap-8">
+        <NuxtLink class="text-lg font-semibold text-[#2F414F]">
+          Become a Talent
+        </NuxtLink>
+        <NuxtLink class="text-lg font-semibold text-[#2F414F]"
+          >Sign In</NuxtLink
+        >
+        <NuxtLink
+          class="border-2 border-[#00ADB5] py-0.5 px-3.5 rounded-md text-[#00ADB5] font-semibold text-lg"
+        >
+          Join
+        </NuxtLink>
+      </nav>
+    </div>
+  </header>
 </template>
 
 <style scoped>
-    /* Add any additional styles here */
+/* Add any additional styles here */
 </style>
