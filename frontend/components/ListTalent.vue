@@ -21,7 +21,7 @@ function setActiveCategory(category: string) {
 <template>
     <div class="">
         <div class="flex justify-center items-center gap-12 py-6">
-            <div v-for="category in categories" class="flex flex-col justify-center items-center text-gray-500 border-b-2 border-white hover:border-b-2 hover:border-gray-500 hover:text-black cursor-pointer" :class="[{'text-teal-500': activeCategory === category}, {'hover:text-teal-500': activeCategory === category}]">
+            <div v-for="category in categories" class="flex flex-col justify-center items-center text-gray-500 border-b-2 border-white hover:border-b-2 hover:border-gray-500 hover:text-black cursor-pointer" :class="[{'text-teal-500': activeCategory === category}, {'hover:text-teal-500': activeCategory === category}, {'hover:border-white': activeCategory === category}]">
                 <span class="material-symbols-outlined text-3xl">favorite</span>
                 <button @click="setActiveCategory(category)" class="text-sm font-semibold">{{ category }}</button>
             </div>
