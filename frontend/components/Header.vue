@@ -1,25 +1,46 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
-    <header class="p-4 border-b-2 border-b-[#111419] border-opacity-25">
-        <div class="container mx-auto px-16 flex justify-between items-center">
-            <h1 class="text-[#00ADB5] text-3xl font-bold">JuanaFinder</h1>
-            <!-- <div class="flex space-x-4">
-                <button class="text-white bg-blue-500 px-4 py-2 rounded">Messages</button>
-                <button class="text-white bg-blue-500 px-4 py-2 rounded">Notifications</button>
-                <button class="text-white bg-blue-500 px-4 py-2 rounded">Contracts</button>
-            </div> -->
-            <div class="flex justify-between items-center gap-8">
-                <button class="text-lg font-semibold text-[#2F414F] hover:bg-gray-100 rounded-3xl p-2 px-4">Become a Talent</button>
-                <button class="text-lg font-semibold text-[#2F414F] hover:bg-gray-100 rounded-3xl p-2 px-4">Log In</button>
-                <button class="border-2 border-[#00ADB5] hover:bg-[#00ADB5] hover:text-[#F1F1EF] py-0.5 px-3.5 rounded-md text-[#00ADB5] font-semibold text-lg">Sign Up </button>
-            </div>
-        </div>
-    </header>
+  <header class="p-4 border-b-2 border-b-[#111419] border-opacity-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Mobile -->
+      <!-- <button class="block md:hidden">
+        <span class="material-symbols-outlined"> menu </span>
+      </button> -->
+      <!-- Mobile -->
+      <NuxtLink to="/" class="flex gap-3 items-center">
+        <img src="/logo.svg" class="h-12 w-12" alt="" />
+        <h1 class="text-[#00ADB5] text-2xl font-bold">JuanaFinder</h1>
+      </NuxtLink>
+      <!-- Mobile -->
+      <nav class="block md:hidden">
+        <NuxtLink
+          class="border-2 border-[#00ADB5] py-2 px-3.5 rounded-md text-[#00ADB5] font-semibold text-lg"
+        >
+          Sign Up
+        </NuxtLink>
+      </nav>
+      <!-- Mobile -->
+      <nav class="hidden md:flex justify-between items-center gap-8">
+        <NuxtLink
+          class="text-lg font-semibold text-[#2F414F] hover:bg-gray-100 rounded-3xl p-2 px-4"
+        >
+          Become a Talent
+        </NuxtLink>
+        <NuxtLink
+          class="text-lg font-semibold text-[#2F414F] hover:bg-gray-100 rounded-3xl p-2 px-4"
+          >Sign In</NuxtLink
+        >
+        <NuxtLink
+          class="border-2 border-[#00ADB5] py-0.5 px-3.5 rounded-md text-[#00ADB5] font-semibold text-lg hover:bg-[#00ADB5] hover:text-[#F1F1EF]"
+        >
+          Sign Up
+        </NuxtLink>
+      </nav>
+    </div>
+  </header>
 </template>
 
 <style scoped>
-
+/* Add any additional styles here */
 </style>
