@@ -6,7 +6,7 @@ export default defineNuxtConfig({
       title: 'JuanaFinder',
       link: [
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined' },
-        //{ rel: "icon", type: "image/x-icon", href: "/CartTellLogo.png" }
+        //{ rel: "icon", type: "image/x-icon", href: ".png" }
       ],
     }
   },

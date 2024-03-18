@@ -48,7 +48,12 @@ const handleTalentButtonClick = () => {
             <ListTalent/>
         </div>
 
-        <MapButton/>
+        <div class="z-20">
+            <MapButton/>
+        </div>
+        <div class="z-10">
+            <NavBar/>
+        </div>  
     </div>
 </template>
 
