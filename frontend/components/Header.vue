@@ -17,21 +17,24 @@
         <NuxtLink
           class="border-2 border-[#00ADB5] py-2 px-3.5 rounded-md text-[#00ADB5] font-semibold text-lg"
         >
-          Join
+          Sign Up
         </NuxtLink>
       </nav>
       <!-- Mobile -->
       <nav class="hidden md:flex justify-between items-center gap-8">
-        <NuxtLink class="text-lg font-semibold text-[#2F414F]">
+        <NuxtLink
+          class="text-lg font-semibold text-[#2F414F] hover:bg-gray-100 rounded-3xl p-2 px-4"
+        >
           Become a Talent
         </NuxtLink>
-        <NuxtLink class="text-lg font-semibold text-[#2F414F]"
+        <NuxtLink
+          class="text-lg font-semibold text-[#2F414F] hover:bg-gray-100 rounded-3xl p-2 px-4"
           >Sign In</NuxtLink
         >
         <NuxtLink
-          class="border-2 border-[#00ADB5] py-0.5 px-3.5 rounded-md text-[#00ADB5] font-semibold text-lg"
+          class="border-2 border-[#00ADB5] py-0.5 px-3.5 rounded-md text-[#00ADB5] font-semibold text-lg hover:bg-[#00ADB5] hover:text-[#F1F1EF]"
         >
-          Join
+          Sign Up
         </NuxtLink>
       </nav>
     </div>
