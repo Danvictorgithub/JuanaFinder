@@ -3,14 +3,12 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     head: {
-      title: 'JuanaFinder',
+      title: 'JuanaFinder | Local Jobs, Gigs, and More',
       link: [
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined' },
-        //{ rel: "icon", type: "image/x-icon", href: ".png" }
+        { rel: "icon", type: "image/x-icon", href: "/logo.svg" }
       ],
     }
   },
-  modules: [
-    '@nuxtjs/tailwindcss'
-  ],
+  modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt'],
 })
