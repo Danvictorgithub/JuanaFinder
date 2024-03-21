@@ -61,7 +61,13 @@ const handleTalentButtonClick = () => {
 
       <MapButton />
     </section>
-    <Footer />
+    <div class="sm:block hidden">
+      <Footer />
+    </div>
+    <div class="sm:hidden block">
+      <NavBar/>
+    </div>
+
   </main>
 </template>
 

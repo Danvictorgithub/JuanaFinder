@@ -1,22 +1,46 @@
 <script setup>
-    import { ref } from 'vue';
-
-    const isMenuOpen = ref(false);
-
-    function toggleMenu() {
-        isMenuOpen.value = !isMenuOpen.value;
-    }
+const isLogin = ref(true)
 </script>
 
 <template>
-    <div class="bottom-0 absolute w-full block sm:hidden">
-        <nav class="bg-gray-800">
-            <div class="flex items-center justify-center h-12">
-                <div class="ml-10 flex items-baseline space-x-4">
-                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Profile</a>
-                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Search</a>
-                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contracts</a>
-                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Notification</a>
+    <div class="bottom-0 w-full block sm:hidden fixed">
+        <nav class="bg-white">
+            <div class="flex items-center justify-center h-18">
+                <div v-if="!isLogin" class="flex gap-16">
+                    <NuxtLink class="flex flex-col items-center justify-center">
+                        <span class="material-symbols-outlined text-3xl">search</span>
+                        <p>Search</p>
+                    </NuxtLink>
+                    <NuxtLink class="flex flex-col items-center justify-center" style="text-align: center;">
+                        <span class="material-symbols-outlined">add_circle</span>
+                        <p>Proposal</p>
+                    </NuxtLink>
+                    <NuxtLink class="flex flex-col items-center justify-center">
+                        <span class="material-symbols-outlined text-3xl ">person</span>
+                        <p>Log In</p>
+                    </NuxtLink>
+                </div>
+                <div v-else class="flex gap-8">
+                    <NuxtLink class="flex flex-col items-center justify-center">
+                        <span class="material-symbols-outlined text-3xl ">person</span>
+                        <p>Profile</p>
+                    </NuxtLink>
+                    <NuxtLink class="flex flex-col items-center justify-center">
+                        <span class="material-symbols-outlined text-3xl">search</span>
+                        <p>Search</p>
+                    </NuxtLink>
+                    <NuxtLink class="flex flex-col items-center justify-center">
+                        <span class="material-symbols-outlined">add_circle</span>
+                        <p>Proposal</p>
+                    </NuxtLink>
+                    <NuxtLink class="flex flex-col items-center justify-center">
+                        <span class="material-symbols-outlined">contract</span>
+                        <p>Contract</p>
+                    </NuxtLink>
+                    <NuxtLink class="flex flex-col items-center justify-center">
+                        <span class="material-symbols-outlined">notifications</span>
+                        <p>Alert</p>
+                    </NuxtLink>
                 </div>
             </div>
         </nav>
