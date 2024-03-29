@@ -4,7 +4,8 @@
 
 <template>
     <div>
-        map
+        <Header/>
+        client profile
         <NavBar/>
     </div>
 </template>

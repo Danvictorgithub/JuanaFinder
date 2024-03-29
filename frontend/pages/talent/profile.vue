@@ -4,7 +4,8 @@
 
 <template>
     <div>
-        map
+        <Header/>
+        talent profile
         <NavBar/>
     </div>
 </template>

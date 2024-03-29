@@ -11,4 +11,17 @@ export default defineNuxtConfig({
     }
   },
   modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt'],
+
+  tailwindcss:{
+    config:{
+      theme: {
+        extend: {
+          colors: {
+            primary: '#00ADB5',
+            textprimary:'#2F414F',
+          },
+        },
+      },
+    }
+  }
 })

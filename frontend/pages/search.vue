@@ -4,7 +4,7 @@
 
 <template>
     <div>
-        map
+        search
         <NavBar/>
     </div>
 </template>

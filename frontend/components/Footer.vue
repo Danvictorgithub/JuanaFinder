@@ -1,6 +1,6 @@
 <template>
   <!-- Foooter -->
-  <section class="bg-white">
+  <section class="bg-white md:block hidden">
     <div
       class="w-full-xl px-4 py-12 space-y-8 overflow-hidden sm:px-6 lg:px-8 bg-gray-50"
     >
