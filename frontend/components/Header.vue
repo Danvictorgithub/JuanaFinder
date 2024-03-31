@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <header class="p-4 border-b-2 border-b-[#111419] border-opacity-50">
+  <header class="p-4 border-b-2 border-b-gray-200 bg-white">
     <div class="container mx-auto flex justify-between items-center">
       <!-- Mobile -->
       <!-- <button class="block md:hidden">
@@ -15,6 +15,7 @@
       <!-- Mobile -->
       <nav class="block md:hidden">
         <NuxtLink
+          to="/signup"
           class="border-2 border-[#00ADB5] py-2 px-3.5 rounded-md text-[#00ADB5] font-semibold text-lg"
         >
           Sign Up
