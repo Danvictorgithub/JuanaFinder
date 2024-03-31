@@ -14,12 +14,15 @@ const handleTalentButtonClick = () => {
   listClient.value = false;
   listTalent.value = true;
 };
+
+const el = ref(null);
+const { width, height } = useElementSize(el);
 </script>
 <!-- #2F414F #00ADB5 #F1F1EF #C7DAD4 #111419 -->
 <template>
   <main class="bg-slate-50">
     <Header />
-    <section class="min-h-svh py-12 px-4">
+    <section class="min-h-[100px] py-12 px-4" ref="el">
       <!-- # Later sa ni gamiton # -->
       <!-- <div v-if="!loginClient && !loginTalent" class="p-4">
         <div class="flex justify-center items-center gap-8">
@@ -183,7 +186,7 @@ const handleTalentButtonClick = () => {
           </div>
         </div>
       </section>
-      <MapButton />
+      <MapButton :container-height="height" />
     </section>
     <Footer />
   </main>

@@ -1,12 +1,18 @@
 <script setup lang="ts">
+const props = defineProps({ containerHeight: Number });
 const { x, y } = useWindowScroll();
-const { width, height } = useWindowSize();
+const { height, width } = useWindowSize();
+watchEffect(() => {
+  console.log(props.containerHeight);
+  console.log(y.value);
+});
 </script>
 
 <template>
   <div
     :class="
-      y > 0 && y <= height / 3.1
+      y > 0 &&
+      y <= (containerHeight ? containerHeight - height : undefined || 1000)
         ? 'fixed bottom-10 left-1/2 ml-[-72px] opacity-100 transition-opacity ease-in'
         : 'fixed bottom-10 left-1/2 ml-[-72px] transition-opacity ease-in opacity-0'
     "
