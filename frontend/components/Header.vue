@@ -28,10 +28,12 @@
           Become a Talent
         </NuxtLink>
         <NuxtLink
+          to="/signin"
           class="text-lg font-semibold text-[#2F414F] hover:bg-gray-100 rounded-3xl p-2 px-4"
           >Sign In</NuxtLink
         >
         <NuxtLink
+          to="/signup"
           class="border-2 border-[#00ADB5] py-0.5 px-3.5 rounded-md text-[#00ADB5] font-semibold text-lg hover:bg-[#00ADB5] hover:text-[#F1F1EF]"
         >
           Sign Up
