@@ -1,7 +1,4 @@
 <script setup lang="ts">
-let loginClient = ref(false);
-let loginTalent = ref(false);
-
 let listClient = ref(false);
 let listTalent = ref(true);
 
@@ -29,7 +26,7 @@ const { width, height } = useElementSize(el);
           <button
             class="text-2xl font-semibold rounded-3xl px-4 py-2 transition-colors duration-150 ease-in-out"
             :class="[
-              { 'bg-[#00ADB5] hover:bg-[#00ADB5] text-[#F1F1EF]': listTalent },
+              { 'bg-primary hover:bg-primary text-[#F1F1EF]': listTalent },
               { 'hover:bg-gray-100': !listTalent },
             ]"
             @click="handleTalentButtonClick"
@@ -39,7 +36,7 @@ const { width, height } = useElementSize(el);
           <button
             class="text-2xl font-semibold rounded-3xl px-4 py-2 transition-colors duration-150 ease-in-out"
             :class="[
-              { 'bg-[#00ADB5] hover:bg-[#00ADB5] text-[#F1F1EF]': listClient },
+              { 'bg-primary hover:bg-primary text-[#F1F1EF]': listClient },
               { 'hover:bg-gray-100': !listClient },
             ]"
             @click="handleClientButtonClick"
@@ -188,7 +185,9 @@ const { width, height } = useElementSize(el);
       </section>
       <MapButton :container-height="height" />
     </section>
+
     <Footer />
+    <NavBar />
   </main>
 </template>
 

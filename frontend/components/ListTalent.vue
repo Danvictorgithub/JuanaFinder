@@ -56,8 +56,9 @@ function setActiveCategory(category: string) {
         @click="setActiveCategory(category)"
         class="flex flex-col justify-center items-center text-gray-500 border-b-2 border-white hover:border-b-2 hover:border-gray-500 hover:text-black cursor-pointer"
         :class="[
-          { 'text-teal-500': activeCategory === category },
-          { 'hover:text-teal-500': activeCategory === category },
+          { 'text-primary': activeCategory === category },
+          { 'hover:text-primary': activeCategory === category },
+          { 'hover:border-b-primary': activeCategory === category },
         ]"
       >
         <span class="material-symbols-outlined text-3xl">favorite</span>
